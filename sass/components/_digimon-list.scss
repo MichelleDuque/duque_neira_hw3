@@ -26,3 +26,49 @@ p {
 #digimon-list li {
     margin-bottom: 30px;
 }
+
+/* Add your custom CSS styles here */
+#previous,
+#next {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#previous:hover,
+#next:hover {
+    background-color: #0056b3;
+}
+
+#previous i,
+#next i {
+    font-size: 24px;
+}
+
+/* CSS for the carousel */
+
+.carousel {
+    display: flex;
+    overflow-x: hidden; /* Hide overflowing content */
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex: 0 0 auto; /* Ensure items do not shrink or grow */
+    width: 100%; /* Each item takes full width */
+}
+
+// /* Hide previous and next buttons when they are not needed */
+// #previous, #next {
+//     display: none;
+// }
+
+// /* Show previous and next buttons when they are needed */
+// #app:hover #previous, #app:hover #next {
+//     display: block;
+// }
