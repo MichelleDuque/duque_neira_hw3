@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digimon API</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Digimon Api</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato%7CRaleway" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="module" src="js/main.js"></script>
 </head>
 <body>
     <div class="grid-con">
@@ -11,6 +16,32 @@
             <img src="images/Digidevice.svg" alt="">
         </div>
     </div>
+
+    <div class="grid-con" id="app">
+        <div class="col-span-full">
+            <ul id="digimon-list">
+                thumbnail to be added by student, v-bind directive
+                <li  v-for="character in charactersData">
+                    <h3>Title <a href="#digimon" @click="getDigimon(character.name)">{{character.name}}</a></h3>
+                    <img :src="'images/' + character.image" :alt="character.name">
+                    <h4>Trainer: {{character.fullname}}</h4>
+                </li>
+            </ul> 
+        </div>
+
+        <div class="col-span-full" id="digimonInfoCon">
+            <div v-if="error">{{error}}</div>
+            <div id="digimon" v-if="!error">
+                <p>Levels: {{levels}}</p>
+                <p>Fields:
+                <div v-for="field in fields">
+                    <img :src="field" alt="Digimon Image">
+                </div>
+                </p>
+                <p>Type: {{types}}</p>
+                <p>Attributes: {{attributes}}</p>
+            </div>
+        </div>
 
 </body>
 </html>
