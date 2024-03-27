@@ -51,24 +51,49 @@ p {
 
 /* CSS for the carousel */
 
-.carousel {
-    display: flex;
-    overflow-x: hidden; /* Hide overflowing content */
-    width: 100%;
-    transition: transform 0.5s ease;
+// .carousel {
+//     display: flex;
+//     overflow-x: hidden; 
+//     width: 100%;
+//     transition: transform 0.5s ease;
+// }
+
+#digimon-box {
+    position: relative; 
+    width: fit-content; 
+    height: fit-content; 
+    margin: auto; 
+}
+
+#digimon-box img {
+    display: block;
+    margin: auto;
+    max-width: 100%; 
+    height: auto; 
 }
 
 .carousel-item {
-    flex: 0 0 auto; /* Ensure items do not shrink or grow */
-    width: 100%; /* Each item takes full width */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, 50%); 
+    z-index: 1;
+    text-align: center;
 }
 
-// /* Hide previous and next buttons when they are not needed */
-// #previous, #next {
-//     display: none;
-// }
+#digimon-in-device{
+    width: 40%;
+}
 
-// /* Show previous and next buttons when they are needed */
-// #app:hover #previous, #app:hover #next {
-//     display: block;
-// }
+
+#button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: calc(100% - 100px); 
+    top: 100%;
+    transform: translateY(-50%);
+    padding: 0 150px; 
+}
+

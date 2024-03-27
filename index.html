@@ -13,30 +13,24 @@
 </head>
 <body>
 
-    <div class="grid-con">
-        <div class="col-span-full">
-            <img src="images/Digidevice.svg" alt="">
-        </div>
-    </div>
     
     <div class="grid-con" id="app">
+        <div class="col-span-full" id="digimon-device">
+            <img src="images/Digidevice.svg" alt="">
+        </div>
         <div class="col-span-full">
             <div class="carousel-item">
-                <h3 v-if="charactersData.length > 0">Title <a href="#digimon" @click="getDigimon(charactersData[count].name)">{{charactersData[count].name}}</a></h3>
-                <img v-if="charactersData.length > 0" :src="'images/' + charactersData[count].image" :alt="charactersData[count].name">
+                <h3 v-if="charactersData.length > 0"><a href="#digimon" @click="getDigimon(charactersData[count].name)">{{charactersData[count].name}}</a></h3>
+                <img  id="digimon-in-device" v-if="charactersData.length > 0" :src="'images/' + charactersData[count].image" :alt="charactersData[count].name">
                 <h4 v-if="charactersData.length > 0">Trainer: {{charactersData[count].fullname}}</h4>
             </div>
-        </div>
-    
-        <div class="grid-con">
-            <div class="col-span-full">
+            <div class="col-span-full" id="button-container">
                 <button id="previous" @click="previousDigimon">
                     <i class="fa-solid fa-circle-left"></i>
                 </button>
                 <button id="next" @click="nextDigimon">
                     <i class="fa-solid fa-circle-right"></i>
                 </button>
-            </div>
         </div>
     
         <div class="col-span-full" id="digimonInfoCon">
