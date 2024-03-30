@@ -14,10 +14,11 @@ function toggleInstructionBox() {
 const digimon = Vue.createApp({
     created() {
         // Fetch characters data from the API
-        fetch("http://localhost:8888/digimon/public/characters")
+        fetch("http://localhost/digimon/public/characters")
             .then(res => res.json())
             .then(data => {
                 this.charactersData = data;
+                console.log(data)
                 this.displayCharacter(0); // Display the first character
             })
             .catch(error => {
@@ -34,7 +35,8 @@ const digimon = Vue.createApp({
             types: "",
             attributes: "",
             photo: "",
-            error: ""
+            error: "",
+            showEvolutionName: false,
         }
     },
 
@@ -88,53 +90,19 @@ const digimon = Vue.createApp({
                 this.count = this.charactersData.length - 1;
             }
             this.displayCharacter(this.count);
+        },
+
+        //Method to display evolution and get back to the original
+        evolutionDigimon() {
+            this.showEvolutionName = !this.showEvolutionName; // We change the name and image depending if the evolution or kid is showing
         }
+
     }
+    
 });
 
 digimon.mount("#app");
 
-// second app for evolution
-
-const digimonEvolution = Vue.createApp({
-    created() {
-        // Fetch characters data from the API
-        fetch("http://localhost:8888/digimon/public/evolutions")
-            .then(res => res.json())
-            .then(data => {
-                this.charactersData = data;
-                this.displayEvo(0); // Display the first evolution
-            })
-            .catch(error => {
-                console.error(error);
-                this.error = "Error fetching data";
-            });
-    },
-
-    data() {
-        return {
-            charactersData: [],
-            count: 0,
-            photo: "",
-            evolutionName: "",
-            error: "",
-        }
-    },
-
-    methods: {
-        displayEvo(count) {
-            if (count >= 0 && count < this.charactersData.length) {
-                const evolution = this.charactersData[count];
-                this.photo = evolution.photo;
-                this.evolutionName = evolution.evolution_name;
-            } else {
-                this.error = "Invalid evolution index";
-            }
-        },
-    }
-});
-
-digimonEvolution.mount("#app-evolution");
 
 
 

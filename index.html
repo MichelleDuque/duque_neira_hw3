@@ -122,19 +122,21 @@
     
     <!-- Digimon Name -->
     <foreignObject x="845" y="353.18" class="st8" width="355.15" height="50">
-        <div id="digimonName" class="info-box">
-            <h3 v-if="charactersData.length > 0">{{charactersData[count].name}}</h3>
-        </div>
-        
-    </foreignObject>
+		<div id="digimonName" class="info-box">
+			<h3 v-if="charactersData.length > 0">{{ showEvolutionName ? charactersData[count].evolution_name : charactersData[count].name }}</h3>
+		</div>
+	</foreignObject>
+	
 
     <!-- Digimon-in-device and Levels -->
-    <foreignObject x="955.37" y="353.18" class="st8" width="300" height="250">
-        <div id="digimonLevels" class="info-box">
-            <h3>Levels: {{levels}}</h3>
-            <img id="digimon-in-device" v-if="charactersData.length > 0" :src="'images/' + charactersData[count].image" :alt="charactersData[count].name">
-        </div>
-    </foreignObject>
+	<foreignObject x="955.37" y="353.18" class="st8" width="300" height="250">
+		<div id="digimonLevels" class="info-box">
+			<h3>Levels: {{ levels }}</h3>
+			<img id="digimon-in-device" v-if="charactersData.length > 0" :src="'images/' + (showEvolutionName ? charactersData[count].photo : charactersData[count].image)" :alt="(showEvolutionName ? charactersData[count].evolution_name : charactersData[count].name)">
+		</div>
+	</foreignObject>
+	
+	
 
     <foreignObject x="968" y="560" class="st8" width="355.15" height="305.15">
         <div id="digimonInfoCon" class="info-box">
@@ -239,7 +241,7 @@
 	<path class="st9" d="M1231.48,733.01c9.35,1.04,18.71,2.08,28.22,3.1c0.41,9.79,0.31,19.61-0.16,29.4
 		c0.02,0.02,0.04,0.04,0.07,0.07"/>
 </g>
-<g id="evloute">
+<g id="evloute" style="cursor: pointer;" @click="evolutionDigimon">
 	<circle id="evoback" class="st10" cx="523.98" cy="549.88" r="105.81"/>
 	<circle id="evofront" class="st11" cx="523.98" cy="549.88" r="74.82"/>
 	<g id="Evolutionsymbol">
@@ -340,20 +342,6 @@
 </g>
 
 </svg>
-</div>
-
-
-<!-- new app just for evolution photo -->
-
-<div id="app-evolution">
-    <div v-if="error">
-        <p>{{ error }}</p>
-    </div>
-    <div v-else>
-        <h2>{{ evolutionName }}</h2>
-        <img v-if="photo !== 'Not available'" :src="'http://localhost:8888/digimon/public/evolutions/' + photo" alt="Digimon Evolution Image">
-        <p v-else>{{ photo }}</p>
-    </div>
 </div>
 
 
