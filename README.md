@@ -6,6 +6,8 @@
 
 With the Digidevice, look for your favourite Digimon and know its information and evolution.
 
+![image](./images/Digivice.svg)
+
 ## Description
 
 The Digidevice is a Vue and Ajax project. We use an existing API to get Digimon names and levels. Then, using our own API, we retrieve the evolution and images of each Digimon.
