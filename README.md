@@ -1,6 +1,6 @@
 # duque_neira_hw3
 
-![image](./images/Digvice.svg)
+![image](./images/Digivice.svg)
 
 ## Digidevice 
 
