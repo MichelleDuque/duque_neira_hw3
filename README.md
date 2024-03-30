@@ -1,6 +1,6 @@
 # duque_neira_hw3
 
-## Digidevice 
+## Digivice 
 
 With the Digidevice, look for your favourite Digimon and know its information and evolution.
 
