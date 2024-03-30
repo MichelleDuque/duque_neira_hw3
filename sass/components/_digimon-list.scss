@@ -1,53 +1,121 @@
-h2 {
-    color: crimson;
+@use '../abstracts' as a;
+
+#digimon-box {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#digimon-in-device {
+    position: absolute;
+    max-width: 50%;
+    height: auto;
+    margin-left: 10px;
+}
+
+#digimonInfoCon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 500%;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'digimonbasicmedium', arial, sans-serif;
+}
+
+.fields-container {
     margin-top: 20px;
-    font-size: 38px;
-    margin-bottom: 20px;
 }
 
-h3 {
-    font-size: 20px;
+.field-item {
     margin-bottom: 10px;
-    font-weight: bold;
 }
 
-p {
-    font-size: 20px;
-    margin-bottom: 20px;
+.field-item img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 10px;
+
 }
 
-#digimon-list {
-    list-style-type: none;
-    padding: 0;
+#digimonLevels {
+    padding-top: 5px;
+    font-size: 15px;
+    font-family: 'digimonbasicmedium', arial, sans-serif;
+}
+
+#digimonName {
+    color: yellow;
     font-size: 18px;
-    // margin-top: 40px;
+    font-family: 'digimonbasicmedium', arial, sans-serif;
 }
 
-#digimon-list li {
-    margin-bottom: 30px;
+//button dec
+
+#preback:hover {
+    fill: blue;
 }
+
+#prefront:hover {
+    fill: blue;
+}
+
+#nextback:hover {
+    fill: blue;
+}
+
+#nextfront:hover {
+    fill: blue;
+}
+
+
+
+
+//bg decorations
+
+.digifielddbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    border-radius: 15px;
+}
+
+
+
 
 /* Add your custom CSS styles here */
-#previous,
-#next {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-right: 10px;
-}
+// #previous,
+// #next {
+//     background-color: #007bff;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     padding: 10px 20px;
+//     cursor: pointer;
+//     margin-right: 10px;
+// }
 
-#previous:hover,
-#next:hover {
-    background-color: #0056b3;
-}
+// #previous:hover,
+// #next:hover {
+//     background-color: #0056b3;
+// }
 
-#previous i,
-#next i {
-    font-size: 24px;
-}
+// #previous i,
+// #next i {
+//     font-size: 24px;
+// }
 
 /* CSS for the carousel */
 
@@ -58,42 +126,14 @@ p {
 //     transition: transform 0.5s ease;
 // }
 
-#digimon-box {
-    position: relative; 
-    width: fit-content; 
-    height: fit-content; 
-    margin: auto; 
-}
 
-#digimon-box img {
-    display: block;
-    margin: auto;
-    max-width: 100%; 
-    height: auto; 
-}
-
-.carousel-item {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, 50%); 
-    z-index: 1;
-    text-align: center;
-}
-
-#digimon-in-device{
-    width: 40%;
-}
-
-
-#button-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    width: calc(100% - 100px); 
-    top: 100%;
-    transform: translateY(-50%);
-    padding: 0 150px; 
-}
-
+// #button-container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     position: absolute;
+//     width: calc(100% - 100px); 
+//     top: 100%;
+//     transform: translateY(-50%);
+//     padding: 0 150px; 
+// }
