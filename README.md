@@ -2,47 +2,57 @@
 
 ## Digidevice 
 
-With the Digidevice Look for your favourite Digimon and know its information and evolution
+With the Digidevice, look for your favourite Digimon and know its information and evolution.
+
+![image](./images/Digivice.svg)
 
 ## Description
 
-The Digidevice is a Vue and Ajax project, we use an existed API to get the Digimons names, and levels and then using our own api we will get the description, evolution and images of ech Digimon 
-
+The Digidevice is a Vue and Ajax project. We use an existing API to get Digimon names and levels. Then, using our own API, we retrieve the evolution and images of each Digimon.
 
 ## Features
 
-Digmon Selection: Users can choose their Favourite digimon and know about him.
-
-Evolution: User can evolve its dimon form the Digidevice
-
+- **Digimon Selection**: Users can choose their favourite Digimon and learn about it.
+  
+- **Evolution**: Users can evolve their Digimon from the Digidevice.
 
 ## Implementation
 
-Vue: 
-
-
-Ajax:
+- **Vue**: Vue.js is used for the frontend development.
+  
+- **Ajax**: Ajax is used to make asynchronous HTTP requests to fetch data from APIs.
 
 ## Installation
+
 No installation is required. Download the files to your desktop.
+
 ## Usage
-Open index.html in your browser choice.
 
-1. Start the Digidevice: 
+Open `index.html` in your preferred web browser.
 
-2. Discover Your favourite Digimon: 
+1. **Step 1: Use the buttons on the right to move before or next**: 
 
-3. Evolve your Digimon: 
-   
+2. **Step 2: Choose your Favorite Digimon**: 
+
+3. **Step 3: EVOLVE IT!!**: 
+
 ## Contributing
+
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
+
 ## History
->Thinking of creating...
+
+> We wanted a Minecraft API but there wasn't one so Dev Mich remembered that she liked to watch Digimon and we used the Digomons to make our project.
+
 ## Credits
-Michelle Duque (Michelle) Sandra Paola Neira (San) 
+
+Michelle Duque (Michelle)  
+Sandra Paola Neira (San) 
+
 ## License
+
 MIT License - See included license file
