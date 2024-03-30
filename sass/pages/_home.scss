@@ -1,17 +1,181 @@
+@use '../abstracts' as a;
+
 body {
 	font-family: "Lato", sans-serif;
-	padding: 20px;
+	padding: 0px;
+	background-color: #182b3a;
+	background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%);
 }
 
-#app {
-	padding: 20px;
+
+
+//svg styles
+
+svg {
+	.st0 {
+		stroke: #000000;
+		stroke-width: 11.3083;
+		stroke-miterlimit: 10;
+	}
+
+	.st1 {
+		fill: #CE231C;
+		stroke: #000000;
+		stroke-width: 12.7838;
+		stroke-miterlimit: 10;
+	}
+
+	.st2 {
+		fill: none;
+		stroke: #000000;
+		stroke-width: 7.3408;
+		stroke-miterlimit: 10;
+	}
+
+	.st3 {
+		fill: #4C3B3B;
+		stroke: #000000;
+		stroke-width: 6.6556;
+		stroke-miterlimit: 10;
+	}
+
+	.st4 {
+		fill: none;
+		stroke: #000000;
+		stroke-width: 10.0381;
+		stroke-miterlimit: 10;
+	}
+
+	.st5 {
+		fill: none;
+		stroke: #000000;
+		stroke-width: 11.1087;
+		stroke-miterlimit: 10;
+	}
+
+	.st6 {
+		fill: none;
+		stroke: #000000;
+		stroke-width: 11.2687;
+		stroke-miterlimit: 10;
+	}
+
+	.st7 {
+		fill: none;
+		stroke: #000000;
+		stroke-width: 12.7838;
+		stroke-miterlimit: 10;
+	}
+
+	.st8 {
+		fill: #84996B;
+		stroke: #000000;
+		stroke-width: 11.2687;
+		stroke-miterlimit: 10;
+	}
+
+	.st9 {
+		fill: none;
+		stroke: #000000;
+		stroke-width: 2.1306;
+		stroke-miterlimit: 10;
+	}
+
+	.st10 {
+		fill: #D8C427;
+		stroke: #000000;
+		stroke-width: 9.7472;
+		stroke-miterlimit: 10;
+	}
+
+	.st11 {
+		fill: none;
+		stroke: #000000;
+		stroke-width: 6.8923;
+		stroke-miterlimit: 10;
+	}
+
+	.st12 {
+		fill: #082947;
+	}
+
+	.st13 {
+		fill: #6DA8D6;
+	}
+
+	.st14 {
+		fill: #F2484B;
+	}
+
+	.st15 {
+		fill: #FFCC75;
+	}
+
+	.st16 {
+		fill: #D8C427;
+		stroke: #000000;
+		stroke-width: 10.5;
+		stroke-miterlimit: 10;
+	}
+
+	.st17 {
+		fill: none;
+		stroke: #000000;
+		stroke-width: 6.2939;
+		stroke-miterlimit: 10;
+	}
+
 }
 
-#digimonInfoCon {
-	margin-top: 40px;
+//lightbox
+
+h2 {
+	font-family: 'digimonbasicmedium', arial, sans-serif;
 }
 
-a {
-	color:crimson;
-	text-decoration: none;
+li {
+	list-style: square;
+}
+
+.lightbox {
+	display: none;
+	position: fixed;
+	bottom: 80px;
+	left: 90px;
+	width: 250px;
+	background-color: #e0e0e0;
+	padding: 15px;
+	border-radius: 15px;
+	z-index: 999;
+}
+
+.lightbox .content {
+	color: blue;
+}
+
+.lightbox .close-btn {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.instruction-circle {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	width: 70px;
+	height: 70px;
+	background-color: blue;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.question-icon {
+	width: 44px;
+	height: 44px;
+	fill: #333;
 }
