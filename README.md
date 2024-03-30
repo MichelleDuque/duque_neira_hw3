@@ -1,18 +1,18 @@
 # duque_neira_hw3
 
-![image](./dist/images/Digvice.svg)
+![image](./images/Digvice.svg)
 
 ## Digidevice 
 
-With the Digidevice, look for your favorite Digimon and know its information and evolution.
+With the Digidevice, look for your favourite Digimon and know its information and evolution.
 
 ## Description
 
-The Digidevice is a Vue and Ajax project. We use an existing API to get Digimon names and levels. Then, using our own API, we retrieve the evolution, and images of each Digimon.
+The Digidevice is a Vue and Ajax project. We use an existing API to get Digimon names and levels. Then, using our own API, we retrieve the evolution and images of each Digimon.
 
 ## Features
 
-- **Digimon Selection**: Users can choose their favorite Digimon and learn about it.
+- **Digimon Selection**: Users can choose their favourite Digimon and learn about it.
   
 - **Evolution**: Users can evolve their Digimon from the Digidevice.
 
