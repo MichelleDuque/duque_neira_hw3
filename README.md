@@ -30,11 +30,11 @@ No installation is required. Download the files to your desktop.
 
 Open `index.html` in your preferred web browser.
 
-1. **Start the Digidevice**: 
+1. **Step 1: Use the buttons on the right to move before or next**: 
 
-2. **Discover Your Favorite Digimon**: 
+2. **Step 2: Choose your Favorite Digimon**: 
 
-3. **Evolve Your Digimon**: 
+3. **Step 3: EVOLVE IT!!**: 
 
 ## Contributing
 
