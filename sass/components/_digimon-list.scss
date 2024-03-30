@@ -1,156 +1,107 @@
-@use '../abstracts' as a;
+@use "../abstracts" as a;
 
 #digimon-box {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .carousel-item {
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #digimon-in-device {
-    position: absolute;
-    max-width: 50%;
-    height: auto;
-    margin-left: 10px;
+  position: absolute;
+  max-width: 50%;
+  height: auto;
+  margin-left: 10px;
 }
 
 #digimonInfoCon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 500%;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'digimonbasicmedium', arial, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 500%;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "digimonbasicmedium", arial, sans-serif;
 }
 
 .fields-container {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .field-item {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .field-item img {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    margin-right: 10px;
-
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 #digimonLevels {
-    padding-top: 10px;
-    font-size: 13px;
-    font-family: 'digimonbasicmedium', arial, sans-serif;
+  padding-top: 10px;
+  font-size: 13px;
+  font-family: "digimonbasicmedium", arial, sans-serif;
 }
 
 #digimonName {
-    color: yellow;
-    font-size: 18px;
-    font-family: 'digimonbasicmedium', arial, sans-serif;
+  color: yellow;
+  font-size: 18px;
+  font-family: "digimonbasicmedium", arial, sans-serif;
 }
 
 //button dec
 
 #preback:hover {
-    fill: blue;
+  fill: blue;
 }
 
 #prefront:hover {
-    fill: blue;
+  fill: blue;
 }
 
 #nextback:hover {
-    fill: blue;
+  fill: blue;
 }
 
 #nextfront:hover {
-    fill: blue;
+  fill: blue;
 }
 
 #evoback:hover {
-    fill: blue;
+  fill: blue;
 }
 
 #evofront:hover {
-    fill: blue;
+  fill: blue;
 }
-
 
 //bg decorations
 
 .digifielddbg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-    border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  border-radius: 15px;
 }
 
+@media (min-width: 768px) {
+  .screen {
+    display: block;
+  }
 
-@media (min-width:768px) {
-    .screen {
-        display: block;
-    }
-
-    #mobile-digimon {
-        display: none;
-    }
-
+  #mobile-digimon {
+    display: none;
+  }
 }
-
-
-
-/* Add your custom CSS styles here */
-// #previous,
-// #next {
-//     background-color: #007bff;
-//     color: white;
-//     border: none;
-//     border-radius: 5px;
-//     padding: 10px 20px;
-//     cursor: pointer;
-//     margin-right: 10px;
-// }
-
-// #previous:hover,
-// #next:hover {
-//     background-color: #0056b3;
-// }
-
-// #previous i,
-// #next i {
-//     font-size: 24px;
-// }
-
-/* CSS for the carousel */
-
-// .carousel {
-//     display: flex;
-//     overflow-x: hidden; 
-//     width: 100%;
-//     transition: transform 0.5s ease;
-// }
-
-
-// #button-container {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     position: absolute;
-//     width: calc(100% - 100px); 
-//     top: 100%;
-//     transform: translateY(-50%);
-//     padding: 0 150px; 
-// }
