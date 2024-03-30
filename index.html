@@ -106,7 +106,7 @@
 	<line class="st7" x1="1506.27" y1="604.58" x2="1597.27" y2="604.58"/>
 </g>
 
-<g id="screen">
+<g class="screen hidden">
     <rect x="809.37" y="353.18" class="st8" width="355.15" height="355.15"/>
 
     <!-- background decorations -->
@@ -342,6 +342,40 @@
 </g>
 
 </svg>
+
+
+<div id="mobile-digimon">
+
+		<div>
+			<h3 v-if="charactersData.length > 0">{{ showEvolutionName ? charactersData[count].evolution_name : charactersData[count].name }}</h3>
+		</div>
+		<div>
+			<h3>Levels: {{ levels }}</h3>
+			<img v-if="charactersData.length > 0" :src="'images/' + (showEvolutionName ? charactersData[count].photo : charactersData[count].image)" :alt="(showEvolutionName ? charactersData[count].evolution_name : charactersData[count].name)" class="image-mobile">
+		</div>
+        <div>
+            <div v-if="error">{{error}}</div>
+            <div v-if="!error">
+                <div>
+                    <h3>Type: {{types}}</h3>
+                    <h3>Attributes: {{attributes}}</h3>
+                </div>
+            </div>
+        </div>
+
+        <div >
+            <div v-if="error">{{error}}</div>
+            <div v-if="!error">
+                <h3>Fields:</h3>
+				<div class="fields-mobile">
+                <div v-for="field in fields">
+                    <img :src="field" alt="Digimon Image">
+                </div>
+				</div>
+            </div>
+        </div>
+</div>
+
 </div>
 
 
