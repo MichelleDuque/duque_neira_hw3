@@ -47,8 +47,8 @@
 }
 
 #digimonLevels {
-    padding-top: 5px;
-    font-size: 15px;
+    padding-top: 10px;
+    font-size: 13px;
     font-family: 'digimonbasicmedium', arial, sans-serif;
 }
 
@@ -76,7 +76,13 @@
     fill: blue;
 }
 
+#evoback:hover {
+    fill: blue;
+}
 
+#evofront:hover {
+    fill: blue;
+}
 
 
 //bg decorations
@@ -93,14 +99,12 @@
 }
 
 
-
-
-@media (min-width:768px){
-    .screen{
+@media (min-width:768px) {
+    .screen {
         display: block;
     }
 
-    #mobile-digimon{
+    #mobile-digimon {
         display: none;
     }
 

@@ -1,17 +1,18 @@
-#mobile-digimon{
+#mobile-digimon {
     text-align: center;
     font-family: 'digimonbasicmedium', arial, sans-serif;
-    background-color: #84996b;
+    background-color: #84996B;
     margin-top: 5px;
     padding: 10px;
     margin-bottom: 80px;
+    border-radius: 15px;
 }
 
-.image-mobile{
+.image-mobile {
     max-width: 200px;
 }
 
-.fields-mobile{
+.fields-mobile {
     display: flex;
     flex-direction: row;
     justify-content: center;
