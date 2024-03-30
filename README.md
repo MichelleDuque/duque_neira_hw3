@@ -1,7 +1,5 @@
 # duque_neira_hw3
 
-![image](./images/Digivice.svg)
-
 ## Digidevice 
 
 With the Digidevice, look for your favourite Digimon and know its information and evolution.
